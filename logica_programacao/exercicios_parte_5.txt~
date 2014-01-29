@@ -1,0 +1,6 @@
+1. Entrar com vários números e imprimir quantos números foram digitados.
+
+2. O IBGE fez uma pesquisa, ele quer saber quantos dentistas foram entrevistados.
+Fazer um programa que pergunte aos entrevistados qual a sua profissão e ao final
+diga quantas pessoas foram entrevistadas e quantas são dentistas (considerar
+dentista, Dentista e DENTISTA)

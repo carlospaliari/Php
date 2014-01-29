@@ -1,0 +1,66 @@
+1. Imprimir todos os números de 100 até 1.
+<?php
+
+for ($i=100; $i>=1; $i--)
+{
+    echo "$i".PHP_EOL;
+}
+
+
+2. Criar um algoritmo que imprima todos os números pares no intervalo de 1 a 100.
+<?php
+
+for ($i = 1; $i <= 100; $i++)
+{
+    echo "$i".PHP_EOL;
+}
+
+3. Criar um algoritmo que entre com cinco números e imprima o quadrado de cada número.
+<?php
+
+for ($i=1; $i<=5; $i++)
+{
+    echo $i * $i.PHP_EOL;
+}
+4. Entrar com 10 números e imprimir a metade de cada número.
+<?php
+
+for($i=1; $i<=10; $i++)
+{
+    echo $i / 2 .PHP_EOL;
+}
+
+5. Criar um algoritmo que imprima todos os números de 1 até 100 e a soma deles.
+<?php
+
+for ($i=1; $i<=100; $i++)
+{
+    echo $i + $i.PHP_EOL;
+}
+
+6. Escreva um programa que receba a idade de 10 pessoas, calcule e imprima a quantidade de pessoas maiores de idade (idade >= 18 anos).
+<?php
+
+$idades = array();
+$cont = 0;
+
+for ($i=1; $i<=10; $i++)
+{
+    $idades[$i] = rand( 0,100);
+}
+
+print_r($idades);
+
+//Verificacao
+for ($i=1; $i<=10; $i++)
+{
+    if ($idades[$i] >= 18) {
+        $cont += 1;
+    }
+}
+
+echo "A quantidade de pessoas com mais de 18 anos é: $cont";
+
+
+7. Entrar com nome, idade e sexo de 10 pessoas. Imprimir o nome se a pessoa for do sexo masculino e tiver mais de 21 anos.
+

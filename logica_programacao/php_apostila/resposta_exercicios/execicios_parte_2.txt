@@ -1,0 +1,157 @@
+1. Faça um algoritmo que leia dois números, calcule e imprima a soma desses dois números.
+<php
+
+function soma($a, $b)
+{
+	return $a + $b;
+}
+	
+2. Faça um programa que receba dois números reais, calcule e mostre a subtração do primeiro número pelo segundo.
+<php
+
+
+function subtracao($a, $b)
+{
+	return $a - $b;
+	/*
+		* Essa função aceita números inteiros e reias que ela vai 		  * calcular corretamente.
+	*/
+}
+
+3. Faça um programa que receba dois números inteiros, calcule e imprima a divisão do primeiro número pelo segundo.
+<php
+
+function divisão($x, $y)
+{
+	return $x / $y;
+}
+
+4. Faça um programa que leia um número e informe a metade e o dobro desse número.
+<?php
+
+function metade_e_dobro($x)
+{
+    $metade = $x / 2;
+    $dobro = $x * 2;
+
+    return [$metade, $dobro];
+}
+
+
+5. Escreva um programa que receba um número via teclado e informe em seguida a metade e o quadrado desse número.
+<?php
+
+
+function metade_e_quadrado($x)
+{
+    $metade = $x / 2;
+    $quadrado = $x * $x;
+
+    return [$metade, $quadrado];
+}
+
+
+6. Escrever um programa que permita receber o nome e a idade de uma pessoa e em seguida, informar o nome digitado e a idade da pessoa daqui a 30 anos.
+<?php
+
+function idade_apos_30($nome, $idade)
+{
+    $idade += 30; // += serve para repetir ele mesmo; 					// no lugar de: $idade = $idade + 30;
+    return ["$nome", $idade];
+}
+
+
+7. Faça um programa que leia três notas de um aluno, calcule e imprima a média aritmética entre essas notas.
+<?php
+
+function media_aluno($a, $b, $c)
+{
+    return ($a + $b + $c) / 3;
+}
+
+
+8. Faça um programa que receba dois números inteiros, calcule e imprima: - soma do dois números;
+- subtração do primeiro pelo segundo;
+- subtração do segundo pelo primeiro;
+- produto dos dois números;
+- divisão do primeiro pelo segundo;
+- quociente inteiro da divisão do primeiro pelo segundo; - resto da divisão do primeiro pelo segundo.
+<?php
+
+function retornandoo_funcoes($x, $y)
+{
+    $soma_de_dois_numeros = $x + $y;
+    $subtracao_do_primeiro_pelo_segundo = $x - $y;
+    $subtracao_do_segundo_pelo_primeiro = $y - $x;
+    $produto = $x * $y;
+    $divisao = $x / $y;
+    $divisao_inteiro = round($x / $y);
+    $resto_da_divisao = $x % $y;
+
+    return [
+        $soma_de_dois_numeros,
+        $subtracao_do_primeiro_pelo_segundo,
+        $subtracao_do_segundo_pelo_primeiro,
+        $produto,
+        $divisao,
+        $divisao_inteiro,
+        $resto_da_divisao
+    ];
+}
+
+9. Faça um programa que receba quatro números inteiros, calcule e mostre a soma desses números.
+<?php
+
+function soma($a, $b, $c, $d)
+{
+    return $a + $b + $c + $d;
+}
+
+10. Faça um programa que receba três notas e seus respectivos pesos. Calcule e mostre a média ponderada dessas notas.
+<?php
+
+function notas($nota_1, $nota_2, $nota_3)
+{
+    return ($nota_1 + $nota_2 + $nota_3) / 3;
+}
+
+11. Faça um programa que receba o valor do salário de um funcionário. Calcule e mostre o novo salário, sabendo-se que este sofreu aumento de 25%.
+<?php
+
+function salario($salario)
+{
+    $aumento = $salario * 0.25;
+    return $aumento + $salario;
+}
+
+12. Faça um programa que receba o valor do salário de um funcionário e o percentual de aumento, calcule e mostre o valor do aumento e o novo salário.
+<?php
+
+
+function salario_porcentagem($salario, $porcentagem)
+{
+    $aumento = $salario * ($porcentagem / 100);
+    return $salario + $aumento;
+}
+
+13. Faça um programa que receba o valor do salário-base de um funcionário, calcule e mostre o salário a receber, sabendo-se que este funcionário tem gratificação de 5% sobre o salário-base e paga imposto de 7% sobre o salário-base.
+<?php
+
+function salario_com_impostos($salario)
+{
+    $imposto = $salario * .07;
+    $salario += - $imposto;
+    $aumento = $salario * .05;
+    return $aumento + $salario;
+
+}
+
+14. Faça um programa que receba o valor do salário-base de um funcionário, calcule e mostre o salário a receber, sabendo-se que este funcionário tem gratificação de R$ 1.000,00 e paga imposto de 10% sobre o salário-base.
+<?php
+
+function salario_com_mil_reais($salario)
+{
+    $imposto = $salario * .1;
+    $salario += - $imposto;
+    return $aumento = $salario + 1000;
+}

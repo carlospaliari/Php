@@ -1,0 +1,90 @@
+Uma pousada estipulou o preço da diária em R$ 40,00 e mais uma taxa de serviços diários de:
+- R$ 15,00, se o número de dias for menor que 10;
+- R$ 8,00, se o número de dias for maior ou igual a 10.
+Criar um algoritmo que imprima o nome, o valor da conta de cada cliente e ao final o total arrecadado pela pousada.
+<?php
+
+function pousada($nome_cliente, $diaria)
+{
+    if ($diaria < 10) {
+        return "Ola $nome_cliente, este é o total a pagar: ". $total_arrecadado =  (40 * $diaria) + ($diaria * 8).
+            ". Esperamos que tenha gostado de nossos atendimentos e VOLTE SEMPRE!";
+    }
+    elseif ($diaria >= 10) {
+        return "Ola $nome_cliente, este é o total a pagar: ". $total_arrecadado = + (40 * $diaria) + ($diaria * 15).
+            ". Esperamos que tenha gostado de nossos atendimentos e VOLTE SEMPRE!";
+    }
+}
+
+
+Criar um algoritmo que entre com vários números inteiros e positivos e informe a quantidade de números múltiplos de 3 (três). O programa será encerrado quando o usuário digitar 0 (zero) ou menos.
+<?php
+
+$i = 1;
+while ($i <= 1000)
+{
+    $i++;
+    if(($i + 3) % 3 == 0) {
+        echo "$i é multiplo de tres".PHP_EOL;
+    }
+    else {
+        echo "$i não é ele não e multiplo de tres".PHP_EOL;
+    }
+}
+	
+
+Uma fábrica produz e vende vários produtos e para cada um deles tem-se o nome, quantidade produzida e quantidade vendida. Criar um algoritmo que mostre:
+- Para cada produto, nome, quantidade no estoque e uma mensagem se o produto tiver menos de 50 itens no estoque.
+<?php
+
+function produtos_fabrica($nome_produto, $produto_estoque)
+{
+    if ($produto_estoque < 50) {
+        echo ": Este produto contem menos de 50 itens no estoque";
+    }
+    else {
+        echo "Produto em disposição";
+    }
+    $nome_produto = "$nome_produto";
+    return " => '$nome_produto' ";
+}
+
+Uma empresa classifica seus funcionários em três níveis de acordo com um índice de produtividade. São eles (1) Excelente, (2) Bom e (3) Regular. Cada nível acrescenta um abono ao salário base do funcionário, de acordo com a seguinte tabela:
+- Excelente 80% do salário base;
+- Bom 50% do salário base;
+- Regular 30% do salário base.
+O programa deve ler a matrícula do funcionário, seu salário base e seu nível de abono. Calcular e imprimir o salário a ser pago (salário a ser pago é = salário base + abono). O programa será encerrado quando for digitado 0 para matrícula.
+<?php
+
+function funcionarios($nome_funcionario,  $funcionarios, $salario_base)
+{
+    if ($funcionarios == 1) {
+        echo "Você '$nome_funcionario' foi um funcionario excelente, é seu salario teve um acréscimo de ". $salario_base * .8 . " E seu salario foi para ";
+        return $salario_base + $salario_base * .8;
+    }
+    if ($funcionarios == 2) {
+        echo "Você '$nome_funcionario' foi um funcionario bom, é seu salario teve um acréscimo de ". $salario_base * .5 . " E seu salario foi para ";
+        return $salario_base + $salario_base * .5;
+    }
+    if ($funcionarios == 3) {
+        echo "Você '$nome_funcionario' foi um funcionario regular, é seu salario teve um acréscimo de ". $salario_base * .3 . " E seu salario foi para ";
+        return $salario_base + $salario_base * .3;
+    }
+}
+
+
+Faça um programa que leia os dados de vários alunos, contendo o número da
+matrícula, as três notas e a freqüência. Calcule e mostre: para cada aluno o número de matricula, a nota final e a mensagem (aprovado ou   reprovado); a maior e a menor nota da turma; o total de alunos reprovados;
+<?php
+
+function alunos($numero_matricula, $nota_1, $nota_2, $nota_3, $frequencia)
+{
+    echo "O núemro da sua matricula é $numero_matricula";
+    $media = ($nota_1 + $nota_2 + $nota_3) / 3;
+    if ($media >= 70 && $frequencia >= 140) { // 140 é a media de 70% de 200 dias letivos.
+        return " Aprovado";
+    }
+    else {
+        return " Reprovado";
+    }
+}

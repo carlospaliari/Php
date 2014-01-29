@@ -1,0 +1,5 @@
+1 - Espere ate o dia de seu pagamento
+2 - Apos chegar ao dia do seu pagamento va para o banco
+3 - Entre em sua conta bancaria 
+4 - Confira se o valor do seu salirio esta certo
+5 - Depois retire o dinheiro do seu salario

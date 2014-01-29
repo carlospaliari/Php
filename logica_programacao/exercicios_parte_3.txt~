@@ -1,0 +1,338 @@
+1. Faça um programa que leia um número e informe se o dobro do número é maior que 35.
+<?php
+
+function maior_que_trinta_e_cinco($x)
+{
+    if ($x * 2 > 35) {
+        return "ele é maior que 35";
+    } elseif ($x * 2 < 35) {
+        return "ele é menor que 35";
+    }
+
+    return "ele é igual a 35";
+}
+
+2. Faça um programa que leia um número e informe se a metade do número é menor que 12.
+<?php
+
+function metade_menor_que_doze($x)
+{
+    if ($x / 2 < 12) {
+        return "ele é menor que 12";
+    } elseif ($x / 2 > 12) {
+        return "ele é maior que 12";
+    }
+    return "ele é igual a 12";
+}
+
+3. Faça um programa que leia dois números e informe apenas se o primeiro é maior que o segundo.
+<?php
+
+function numero_maior_que_primeiro($x, $y)
+{
+    if ($x > $y) {
+        return "o primeiro é maior ao segundo";
+    } elseif ($x < $y) {
+        return "o primeiro é menor ao segundo";
+    }
+    return "o primeiro é igual ao segundo";
+}
+
+4. Faça um programa que leia dois números e informa se o primeiro é igual ao segundo.
+<?php
+
+function primeiro_igual_ao_segundo($x, $y)
+{
+    if ($x == $y) {
+        return "O primeiro e igual ao segundo";
+    }
+    elseif ($y != $x) {
+        return "O primeiro e diferente do segundo";
+    }
+}
+
+5. Faça um programa que leia dois números e informe se o primeiro é maior, menor ou igual ao segundo.
+<?php
+
+function maior_menor_igual($x, $y)
+{
+    if ($x > $y) {
+        return "o primeiro é maior ao segundo";
+    } elseif ($x < $y) {
+        return "o primeiro é menor ao segundo";
+    }
+    return "o primeiro é igual ao segundo";
+}
+
+
+6. Faça um programa que leia três números e informe qual dos três é o maior.
+<?php
+
+function maior_entre_tres($x, $y, $z)
+{
+    $maior = $x;
+    if ($y > $maior) {
+        return $y;
+    }
+    elseif ($z > $maior) {
+        return $z;
+    }
+    return $maior;
+}
+
+7. Fazer um programa que receba um número e mostre se ele é positivo, negativo ou nulo (0).
+<?php
+
+function positivo_negativo_nulo($x)
+{
+    if ($x > 0) {
+        return "Positivo";
+    }
+    elseif ($x < 0) {
+        return "Negativo";
+    }
+    return "Nulo";
+}
+
+
+8. Elabore um algoritmo que leia um número e mostre o número com a mensagem ‘é par’ ou ‘é ímpar’.
+<?php
+
+function par_impar($x)
+{
+    if ($x % 2 == 0) {
+        return "Par";
+    }
+    else {
+        return "Impar";
+    }
+}
+
+
+9. Faça um programa que leia a altura e o sexo de uma pessoa, calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+Para homens: (72.7 * h) – 58
+Para mulheres: (62.1 * h) – 44.7 (h = altura)
+<?php
+
+function peso_ideal($h, $sexo)
+{
+    if ($sexo == 'homem') {
+        return (72.7 * $h) - 58;
+    }
+    if ($sexo == 'mulher') {
+        return (62.1 * $h) - 44.7;
+    }
+}
+
+
+10. Faça um programa que receba quatro notas de um aluno, calcule e imprima a média aritmética das notas e a mensagem de aprovado para média superior ou igual a 7.0 ou a mensagem de reprovado para média inferior a 7.0.
+<?php
+
+function media_aluno($a, $b, $c, $d)
+{
+    $media = ($a + $b + $c + $d) / 4;
+    if ($media >= 70) {
+        return "Aprovado";
+    }
+    if ($media < 70) {
+        return "Reprovado";
+    }
+}
+
+
+11. Faça um programa que calcule e imprima o salário reajustado de um funcionário de acordo com a seguinte regra:
+- salários até R$ 300,00, reajuste de 50%
+- salários maiores que R$ 300,00, reajuste de 30%
+<?php
+
+function salarios($salario)
+{
+    if ($salario <= 300) {
+        return $salario + $salario * .5;
+    }
+    return $salario + $salario * .3;
+}
+
+
+12. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários municipais. O valor máximo da prestação não poderá ultrapassar 30% do salário bruto. Fazer um algoritmo que permita entrar com o salário bruto e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
+<?php
+
+function credito($salario, $credito)
+{
+    if ($salario - $credito >= $salario * .7) {
+        return "Credito Aprovado";
+    }
+    else {
+        return "Credito Reprovado";
+    } //9984-1544
+}
+
+
+13. Ler um número qualquer e exibir na tela uma mensagem indicando se ele é positivo, negativo ou nulo (zero). Se ele for positivo, exibir também a raiz quadrada deste número. Se ele for negativo você deve uma escrever mensagem dizendo ‘Não é possível calcular a raiz deste número’.
+<?php
+
+function numeros_com_raiz($x)
+{
+    if ($x > 0) {
+        return "positivo ". raiz($x); // O espaço na string"", é para ter um separar a string da função raiz
+    }
+    if ($x > 0) {
+        return "positivo";
+    }
+    if ($x < 0) {
+        return "Não é possível calcular a raiz deste número";
+    }
+    return "nulo";
+}
+
+function raiz($x)
+{
+    $x = sqrt($x);
+    return $x;
+}
+
+
+
+14. Ler um número inteiro e exibir na tela a mensagem ‘Par’ se ele for um número par, ou ‘Ímpar’ se ele for um número ímpar.
+<?php
+
+function par_impar($x)
+{
+    if ($x % 2 == 0) {
+        return "Par";
+    }
+    else {
+        return "Impar";
+    }
+}
+
+15. Faça um programa que receba três notas de um aluno, calcule e mostre a média
+      aritmética e as mensagens de acordo com a tabela abaixo. Para os alunos de
+      exame, calcule e mostre a nota que deverá ser tirada no exame para aprovação,
+        considerando que a média no exame é de 6,0.
+MÉDIA           MENSAGEM      
+[ 0,0 a ] 3,0   Reprovado  
+[ 3,0 a ] 7,0	Exame
+[ 7,0 a 10,0 ]	Aprovado
+<?php
+
+function media_aluno($nota_1, $nota_2, $nota_3)
+{
+    $media = ($nota_1 + $nota_2 + $nota_3) / 3;
+    if ($media < 30) {
+        return "Reprovado";
+    }
+    if ($media < 70) {
+        return "Exame";
+    }
+    return "Aprovado";
+}
+
+
+16. Faça um programa que receba três números e os mostre em ordem crescente.
+<?php
+
+function ordena_tres($a, $b, $c)
+{
+    $maior = maior_entre($a, $b);
+    $maior = maior_entre($maior, $c);
+
+    $menor = menor_entre($a, $b);
+    $menor = menor_entre($menor, $c);
+
+    if ($a != $maior && $a != $menor)  {
+        $meio = $a;
+    }
+    else if ($b != $maior && $b != $menor) {
+        $meio = $b;
+    }
+    else {
+        $meio = $c;
+    }
+    return [$maior, $meio, $menor];
+}
+
+function menor_entre($x, $y)
+{
+    if ($x < $y) {
+        return $x;
+    } else {
+        return $y;
+    }
+}
+
+function maior_entre($a, $b)
+{
+    if ($a > $b) {
+        return $a;
+    } else {
+        return $b;
+    }
+}
+
+
+17. Dados três valores X, Y e Z, verificar se eles podem ser os lados de um triângulo e, se forem, verificar se é um triângulo eqüilátero, isósceles ou escaleno. Se eles não formarem um triângulo informar ao usuário tal situação. Considerar que:
+Condição para ser triângulo: 
+O comprimento de cada lado de um triângulo é menor que a soma dos outros dois lados.
+Chama-se triângulo eqüilátero o triângulo que tem os três lados iguais;
+Chama-se triângulo isósceles o que tem o comprimento de dois lados iguais;
+Chama-se triângulo escaleno o triângulo que têm os três lados diferentes.
+<?php
+
+function triangulo($x, $y, $z)
+{
+    if ($x <= 0 || $y <= 0 || $z <= 0) {
+        return "Não é um triângulo";
+    }
+    if ($x == $z && $x == $y && $y == $z) {
+        return "Triangulo equilátero";
+    }
+    if (($x == $z && $x != $y) || ($x == $y && $x != $z) || ($y == $z && $y != $x)) {
+        return "Triangulo Isóscelos";
+    }
+    if ($x <> $z && $x <> $y && $y <> $z) {
+        return "Triangulo Escaleno";
+    }
+}
+
+
+18.Faça um programa que receba o código de origem de um produto e informe a suaprocedência. A procedência obedece a seguinte tabela:
+Código de origem	Procedência
+1 			Sul
+2 			Norte
+3 			Leste
+4 			Oeste
+5 ou 6 			Nordeste
+7, 8 ou 9 		Sudeste
+10 até 20 		Centro-oeste
+21 até 30 		Noroeste
+<?php
+
+function produtos($codigo_de_origem)
+{
+    if ($codigo_de_origem == 1) {
+        return "Sul";
+    }
+    if ($codigo_de_origem == 2) {
+        return "Norte";
+    }
+    if ($codigo_de_origem == 3) {
+        return  "Leste";
+    }
+    if ($codigo_de_origem == 4) {
+        return "Oeste";
+    }
+    if ($codigo_de_origem == 5 || $codigo_de_origem == 6) {
+        return "Nordeste";
+    }
+    if ($codigo_de_origem > 6 && $codigo_de_origem < 10) {
+        return "Sudeste";
+    }
+    if ($codigo_de_origem > 9 && $codigo_de_origem < 21) {
+        return "Centro-oeste";
+    }
+    if ($codigo_de_origem > 20 && $codigo_de_origem < 31) {
+        return "Noroeste";
+    }
+    return "codigo não existente";
+}

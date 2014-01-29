@@ -1,0 +1,80 @@
+1. Identifique o tipo dos dados: 
+(a) inteiro;
+(b) real;
+(c) lógico;
+(d) cadeia ou liter
+
+(c)verdadeiro 
+(d)‘aula’
+(b)-0.342
+(c)‘c*d’
+(a)897
+(b)35.23
+(l)falso 
+(d)‘345’ 
+(a)-23
+(d)’1234’ 
+(b) -18.589
+(d)‘Maria’
+
+
+2. Indique os identificadores como válidos ou inválidos: 
+(a) identificador válido
+(b) identificador inválido
+
+(b) ano
+(a) media_salario 
+(b)média
+(b) ai!
+(b) A15B34 
+(a)‘aula’
+(a) 3/1
+(a) nome-aluno 
+(b)5a
+
+
+3. Faça a declaração de 2 variáveis do tipo inteira, 2 do tipo real, 2 de um único caractere e 2 do tipo cadeia de caracteres.
+
+var_inteira = 10;
+var_inteira = 20;
+var_real = 0.23;
+var_real = 0.17;
+var_carac = x
+var_carac = y
+var_string = "teste_1"
+var_string = "teste_2" 
+
+
+4. Indique qual o resultado das expressões aritméticas abaixo:
+Sendo: y = 2 p = 4
+x = 6.0 y = 2 z = 4.0 a = 8 b = 7.5 c = 7.7 d = 12 p = 4 q = 3, r = 10 s = 2.5
+
+a) x + y– z * a = 32
+b) d div y = 6
+c) d mod y = 0
+d) y div d = 0.16
+e) y mod d = 0.66
+f) ((z / a) + b * a) – d = 65
+g) 100 * (q div p) + r = 1100
+h) p * (r mod q) –q/2 = 2.5
+i) raiz (r – (q * q ) ) = 2 raiz 5 + 9
+j) (a+r)*r = 180
+
+
+5. Dadas as informações abaixo, informe qual o valor das relações (verdadeiro ou falso):
+
+a) a = 2.0, b = 9.0,  nome = ‘ana’, profissao = ‘advogado’
+a+1>=raiz(b)            (true)
+nome<>‘ana’ 			(false)	
+profissao = ‘médico’	(false)
+
+b) a = 6.0, b = 121.0,  nome = ‘pedro’, profissao = ‘médico'
+a+1>=raiz(b) 			(false)
+nome<>‘ana’ 			(true)
+profissao = ‘médico’	(true)
+
+c) x = 3, y = 4, z = 16, nome = 'maria', resultado = verdadeiro
+(x+y>z)and(nome=‘maria’) 			(false)
+(resultado)or(y>=x) 				(true)
+(notresultado)and(zdivy+1=x) 		(true)	
+(nome=‘josé’)and(x+y+z<(y*y))		(false)
